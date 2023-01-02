@@ -6,10 +6,6 @@ const LINKING_ERROR =
   '- You rebuilt the app after installing the package\n' +
   '- You are not using Expo Go\n';
 
-export interface IMultiply {
-  multiply(a: number, b: number): Promise<number>;
-}
-
 const SocketActive = NativeModules.SocketActive
   ? NativeModules.SocketActive
   : new Proxy(
